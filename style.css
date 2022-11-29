@@ -109,6 +109,14 @@ img {
     max-height: 100%;
 }
 
+.img-mobile {
+    display: block;
+}
+
+.img-desktop {
+    display: none;
+}
+
 button {
     font-weight: 700;
 
@@ -132,3 +140,55 @@ button img {
 button p {
     margin-bottom: 7px;
 }
+
+button:hover {
+    background-color: hsl(156, 42%, 18%);
+    cursor: pointer;
+}
+
+@media (min-width: 375.01px) {
+    .card {
+        width: 600px;
+        height: 450px;
+
+        border-radius: 8px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .img-mobile {
+        display: none;
+    }
+    
+    .img-desktop {
+        display: block;
+    }
+
+    p, h1, button {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .perfume {
+        margin-top: 30px;
+    }
+    
+    .parfum-name {
+        margin-top: 17px;
+    }
+
+    .parfum-description {
+        margin-top: 26px;
+    }
+
+    .prices {
+        margin-top: 29px;
+    }
+
+    button {
+        padding: 13px 64px;
+        margin-top: 30px;
+    }
+  }
+  
